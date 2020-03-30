@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Forum"; 
+  src: url("../fonts/Forum.ttf") format("truetype"); 
+  } 
+ 
+ * {  
+  text-decoration: none;
+  font-family: Forum, serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+ 
+ body
+ {
+   margin: 0;
+   padding: 0;
+   background-color: #3b181e;
+   color:#fff;
+ }
+ 
+a {
+color: #fff;
+}
+
+ .container-fluid {
+  overflow-x: hidden;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+ }
+.wrapper {
+margin-left: 95px;
+margin-right: 95px;
+}
+
+.nav {
+  width: 100%;
+  margin-bottom: 190px;
+}
+
+.nav-link {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-top: 105px;
+}
+
+#header {
+  background: url('../img/hero-bg.png') no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#header h1 {
+  font-size: 10rem;
+  letter-spacing: 0.9rem;
+  text-align: center;
+}
+
+.btn {
+background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  background-color:#fff;
+  color: black;
+}
+
+#btn-header {
+width: 200px;
+height: 50px;
+border: solid 1px #fff;
+padding: 0;
+margin-top: 80px;
+text-transform: uppercase;
+letter-spacing: 0.15rem;
+}
+
+#header-icons {
+  margin-right: 180px;
+}
+#header-icons img {
+  padding-bottom: 25px;
+}
+
+#mouse-wheel {
+  margin-top: 155px;
+  width: 36px;
+  height: 56px;
+  border-radius: 22px;
+  border: solid 0.7px #ffffff;
+  background-color: rgba(36, 0, 0, 0.3);
+}
+
+#mouse-wheel::after {
+  content: "|";
+  position: relative;
+  top: 9px;
+  left: 16px;
+  display: inline-block;
+  -webkit-transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+#mouse-wheel:hover::after {
+  transform: translateY(10px);
+}
+
+#catalogue-arrow {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  text-transform: lowercase;
+  transform: rotate(90deg);
+}
+
+#catalogue-arrow::after {
+  display: inline-block;
+  padding-left: 30px;
+  content: "\0279E";
+  -webkit-transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+#catalogue-arrow:hover::after {
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px);
+}
