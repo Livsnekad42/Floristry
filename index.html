@@ -1,18 +1,21 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Floristry</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
-      
-    <div class="container-fluid d-flex flex-column">
-      <header id="header" class="d-flex flex-column">
-        <div class="wrapper">
+
+<head>
+  <title>Floristry</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+  <div class="container-fluid d-flex flex-column">
+    <header id="header" class="d-flex flex-column">
+      <div class="wrapper">
         <ul class="nav justify-content-between">
           <li class="nav-item">
             <a class="nav-link" href="#">весна всегда</a>
@@ -22,23 +25,85 @@
           </li>
         </ul>
         <div id="header-main" class="d-flex flex-column align-items-center">
-            <h1>флористика с душой</h1>
-            <button class="btn btn-primary" id="btn-header">смотреть работы</button>
+          <h1>флористика с душой</h1>
+          <button class="btn btn-primary" id="btn-header">смотреть работы</button>
         </div>
-        
-      <div id="header-bottom-nav" class="d-flex justify-content-between">
-        <div id="header-icons" class="d-flex flex-column">
-          <img src="./img/inst.svg" alt="">
-          <img src="./img/fb.svg" alt="">
-          <img src="./img/whatsapp.svg" alt="">
-          <img src="./img/vk.svg" alt="">
-        </div>
-        <div id="mouse-wheel"></div>
+        <div id="header-bottom-nav" class="d-flex justify-content-between">
+          <div class="d-flex flex-column social-icons">
+            <img src="./img/inst.svg" alt="">
+            <img src="./img/fb.svg" alt="">
+            <img src="./img/whatsapp.svg" alt="">
+            <img src="./img/vk.svg" alt="">
+          </div>
+          <div id="mouse-wheel">
+          </div>
           <a id="catalogue-arrow">смотреть каталог</a>
+        </div>
       </div>
+      <div id="gradient"></div>
+    </header>
+    <section id="services">
+      <div class="row">
+        <div class="col-12">
+          <h2 id="catalogue-name">каталог услуг</h2>
+        </div>
+      </div>
+      <div id="service-list" class="d-flex flex-wrap">
+        <div class="card text-white">
+          <img class="card-img" src="./img/service-1.png" alt="Card image">
+          <div class="card-img-overlay d-flex flex-column justify-content-star">
+            <p>букет невесты и свадебное оформление</p>
+            <button class="btn btn-primary">смотреть работы</button>
+          </div>
+        </div>
+        <div class="card text-white">
+          <img class="card-img" src="./img/service-2.png" alt="Card image">
+          <div class="card-img-overlay d-flex flex-column justify-content-start one-line">
+            <p>букеты на торжества</p>
+            <button class="btn btn-primary">смотреть работы</button>
+          </div>
+        </div>
+        <div class="card text-white">
+          <img class="card-img" src="./img/service-3.png" alt="Card image">
+          <div class="card-img-overlay d-flex flex-column justify-content-start one-line">
+            <p>композиции</p>
+            <button class="btn btn-primary">смотреть работы</button>
+          </div>
+        </div>
+        <div class="card text-white">
+          <img class="card-img" src="./img/service-4.png" alt="Card image">
+          <div class="card-img-overlay d-flex flex-column justify-content-start one-line">
+            <p>оформление мероприятий</p>
+            <button class="btn btn-primary">смотреть работы</button>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section id="sale" class="d-flex flex-row justify-content-center">
+      <div id="sale-content" class="d-flex flex-column align-items-start">
+        <h2>акционные
+          предложения</h2>
+        <p>При заказе свадебного оформления предоставляется скидка на букет невесты и бутоньерку в размере 30%</p>
+        <button class="btn btn-primary btn-sale">заказать оформление</button>
+      </div>
+        <img src="./img/sale-img.png" alt="">
+  </section>
+  <footer id="footer" class="d-flex flex-column align-items-center">
+    <ul id="footer-nav" class="d-flex flex-row">
+      <li>Cвадебная флористика</li>
+      <li>Букеты на любые мероприятия</li>
+      <li>Букеты невесты</li>
+      <li>Композиции</li>
+      <li>Оформление мероприятий</li>
+    </ul>
+    <div class="d-flex social-icons" id="footer-icons">
+      <img src="./img/inst.svg" alt="">
+      <img src="./img/fb.svg" alt="">
+      <img src="./img/whatsapp.svg" alt="">
+      <img src="./img/vk.svg" alt="">
     </div>
-      </header>
-    </div>
+  </footer>
+  </div>
 
 
 
@@ -46,9 +111,15 @@
 
 
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
 </html>

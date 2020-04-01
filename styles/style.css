@@ -1,36 +1,36 @@
 @font-face {
-  font-family: "Forum"; 
-  src: url("../fonts/Forum.ttf") format("truetype"); 
-  } 
- 
- * {  
+  font-family: "Forum";
+  src: url("../fonts/Forum.ttf") format("truetype");
+}
+
+* {
   text-decoration: none;
   font-family: Forum, serif;
   text-transform: uppercase;
   font-size: 12px;
 }
- 
- body
- {
-   margin: 0;
-   padding: 0;
-   background-color: #3b181e;
-   color:#fff;
- }
- 
-a {
-color: #fff;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3b181e;
+  color: #fff;
 }
 
- .container-fluid {
+a {
+  color: #fff;
+}
+
+.container-fluid {
   overflow-x: hidden;
   min-height: 100%;
   padding: 0;
   margin: 0;
- }
+}
+
 .wrapper {
-margin-left: 95px;
-margin-right: 95px;
+  margin-left: 95px;
+  margin-right: 95px;
 }
 
 .nav {
@@ -47,7 +47,6 @@ margin-right: 95px;
 #header {
   background: url('../img/hero-bg.png') no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 #header h1 {
@@ -57,28 +56,30 @@ margin-right: 95px;
 }
 
 .btn {
-background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 200px;
+  height: 50px;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  border: solid 1px #fff;
 }
 
 .btn:hover {
-  background-color:#fff;
+  background-color: #fff;
   color: black;
 }
 
 #btn-header {
-width: 200px;
-height: 50px;
-border: solid 1px #fff;
-padding: 0;
-margin-top: 80px;
-text-transform: uppercase;
-letter-spacing: 0.15rem;
+
+  padding: 0;
+  margin-top: 80px;
 }
 
-#header-icons {
+.social-icons {
   margin-right: 180px;
 }
-#header-icons img {
+
+.social-icons img {
   padding-bottom: 25px;
 }
 
@@ -129,4 +130,160 @@ letter-spacing: 0.15rem;
 #catalogue-arrow:hover::after {
   -webkit-transform: translateX(10px);
   transform: translateX(10px);
+}
+
+#gradient {
+  width: 100%;
+  height: 125px;
+  background-image: linear-gradient(to top, #3b181e, rgba(59, 24, 30, 0));
+  margin-top: 22px;
+}
+
+#services {
+  text-align: center;
+}
+
+#catalogue-name {
+  font-size: 2.5rem;
+  letter-spacing: 0.15rem;
+  margin-top: 170px;
+  z-index: 1;
+}
+
+#catalogue-name::before {
+  content: "";
+  width: 85px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 220px;
+  left: 917px;
+}
+
+#catalogue-name::after {
+position: absolute;
+left: 130px;
+top: 205px;
+content: "Каталог услуг";
+font-size: 18.3rem;
+z-index: 0;
+line-height: 20.05rem;
+text-align: center;
+letter-spacing: 1.1rem;
+opacity: 0.03;
+}
+
+#service-list {
+  margin: 120px 205px 170px;
+}
+
+#service-list:last-child {
+  margin-right: 0;
+}
+
+.card {
+  margin-right: 50px;
+  background: none;
+  border: none;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.card:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-img-overlay {
+margin: 375px 30px 30px 30px;
+position: absolute;
+bottom: 0;
+min-height: 100%;
+}
+
+.card-img-overlay:hover {
+  transform: translateY(-75px);
+  transition: all 0.7s ease-in-out;
+}
+
+.one-line {
+   margin-top: 400px;
+}
+.card-img-overlay p {
+  opacity: 0.9;
+  font-size: 1.3rem;
+  letter-spacing: 0.14rem;
+  line-height: 1.7;
+  text-align: left;
+  transition: all 0.3 ease;
+}
+
+#sale-content {
+margin-left: 375px;
+}
+
+#sale-content h2 {
+font-size: 2.5rem;
+line-height: 1.7;
+letter-spacing: 0.15rem;
+margin-bottom: 40px;
+position: relative;
+}
+
+#sale-content h2::before {
+  content: "";
+  width: 85px;
+  height: 2px;
+  position: absolute;
+  background-color: #fff;
+  top: 115px;
+}
+
+#sale-content p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-transform: none;
+  text-align:left;
+  margin-bottom: 45px;
+}
+
+.btn-sale {
+  font-size: 0.95rem;
+  background-color: #010001;
+}
+
+#sale img {
+margin-right: 330px;
+margin-left: 165px;
+}
+
+#footer {
+border-top: 1px solid rgba(255, 255, 255, 0.2);
+margin-top: 170px;
+}
+
+#footer-nav {
+  margin-top: 20px;
+  list-style: none;
+}
+
+#footer-nav li {
+  text-transform: none;
+  margin-right: 50px;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#footer-icons {
+  margin-right: 0;
+}
+#footer-icons img {
+  padding-bottom: 30px;
+  margin-right: 50px;
 }
