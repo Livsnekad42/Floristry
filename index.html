@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style-copy.css">
 </head>
 
 <body>
@@ -18,45 +18,50 @@
       <div class="wrapper">
         <ul class="nav justify-content-between">
           <li class="nav-item">
-            <a class="nav-link" href="#"><img src="./img/logo.svg" alt="logo"></a>
+            <a class="nav-link" href="#footer"><img src="./img/logo.svg" alt="logo"></a>
           </li>
           <li class="nav-item">
-            <input id="toggle" type="checkbox">
             <label class="toggle-container" for="toggle">
-              <div class="button-toggle">
-                <div id="bars-1"></div>
-                <div id='bars-2'></div>
+                <button type="button" id="modal-button" data-toggle="modal" data-target="#exampleModal">
                 меню
-              </div>
+                </button>
             </label>
-        <div class="d-flex justify-content-center align-items-center modal-menu">
-          <ul id="modal-list">
-            <li class="modal-item">свадебная
-              флористика</li>
-            <li class="modal-item">букеты на любые
-              мероприятия</li>
-            <li class="modal-item">букеты невесты</li>
-            <li class="modal-item">композиции</li>
-            <li class="modal-item">оформление
-              мероприятий</li>
-          </ul>
+            
+          </li>
+        </ul>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document" id="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">&#x2716</button>
+                <ul>
+                  <li class="modal-item">свадебная
+                    флористика</li>
+                  <li class="modal-item">букеты на любые
+                    мероприятия</li>
+                  <li class="modal-item">букеты невесты</li>
+                  <li class="modal-item">композиции</li>
+                  <li class="modal-item">оформление
+                    мероприятий</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </li>
-    </ul>
         <div id="header-main" class="d-flex flex-column align-items-center">
           <h1>флористика с душой</h1>
           <button class="btn btn-primary" id="btn-header">смотреть работы</button>
         </div>
         <div id="header-bottom-nav" class="d-flex justify-content-between">
           <div class="d-flex flex-column social-icons">
-            <img src="./img/inst.svg" alt="">
-            <img src="./img/fb.svg" alt="">
-            <img src="./img/whatsapp.svg" alt="">
-            <img src="./img/vk.svg" alt="">
+            <a href="#"><img src="./img/inst.svg" alt=""></a>
+            <a href="#"><img src="./img/fb.svg" alt=""></a>
+            <a href="#"><img src="./img/whatsapp.svg" alt=""></a>
+            <a href="#"><img src="./img/vk.svg" alt=""></a>
           </div>
           <div id="mouse-wheel">
           </div>
-          <a id="catalogue-arrow">смотреть каталог</a>
+          <a id="catalogue-arrow" href="#services">смотреть каталог</a>
         </div>
       </div>
       <div id="gradient"></div>
@@ -93,42 +98,39 @@
           </div>
         </div>
       </div>
-  </section>
-  <section id="sale" class="d-flex flex-row justify-content-center">
+    </section>
+    <section id="sale" class="d-flex flex-row justify-content-center">
       <div id="sale-content" class="d-flex flex-column align-items-start">
         <h2>акционные
           предложения</h2>
         <p>При заказе свадебного оформления предоставляется скидка на букет невесты и бутоньерку в размере 30%</p>
         <button class="btn btn-primary btn-sale">заказать оформление</button>
       </div>
-        <img src="./img/sale-img.png" alt="">
-  </section>
-  <footer id="footer" class="d-flex flex-column align-items-center">
-    <ul id="footer-nav" class="d-flex flex-row">
-      <li>Cвадебная флористика</li>
-      <li>Букеты на любые мероприятия</li>
-      <li>Букеты невесты</li>
-      <li>Композиции</li>
-      <li>Оформление мероприятий</li>
-    </ul>
-    <div class="d-flex social-icons" id="footer-icons">
-      <img src="./img/inst.svg" alt="">
-      <img src="./img/fb.svg" alt="">
-      <img src="./img/whatsapp.svg" alt="">
-      <img src="./img/vk.svg" alt="">
-    </div>
-  </footer>
+      <img src="./img/sale-img.png" alt="">
+    </section>
+    <footer id="footer" class="d-flex flex-column align-items-center">
+      <ul id="footer-nav" class="d-flex flex-row">
+        <li>Cвадебная флористика</li>
+        <li>Букеты на любые мероприятия</li>
+        <li>Букеты невесты</li>
+        <li>Композиции</li>
+        <li>Оформление мероприятий</li>
+      </ul>
+      <div class="d-flex social-icons" id="footer-icons">
+        <a href="#"><img src="./img/inst.svg" alt=""></a>
+        <a href="#"><img src="./img/fb.svg" alt=""></a>
+        <a href="#"><img src="./img/whatsapp.svg" alt=""></a>
+        <a href="#"><img src="./img/vk.svg" alt=""></a>
+      </div>
+    </footer>
   </div>
 
 
 
-
-
-
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
@@ -136,14 +138,16 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
   <script>
-    let checkbox = document.querySelector('#toggle')
-    let modal = document.querySelector('.modal-menu');
-    let menu = document.querySelector('.button-toggle');
-    checkbox.onclick = function() {
-      modal.classList.toggle('modal-true');
-      menu.classList.toggle('modal-menu-over');
-    }
-  </script>
+
+    $(document).ready(function(){
+       $("#header-bottom-nav").on("click","a", function (event) {
+           event.preventDefault();
+           var id  = $(this).attr('href'),
+               top = $(id).offset().top;
+           $('body,html').animate({scrollTop: top}, 1500);
+       });
+   });
+   </script>
 </body>
 
 </html>

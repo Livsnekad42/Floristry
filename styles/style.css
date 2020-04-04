@@ -41,78 +41,39 @@ a {
 .nav-item {
   margin-top: 105px;
 }
-
-#toggle {
-  display: none;
+.modal {
+  padding-right: 0 !important;
 }
 
-.button-toggle {
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  margin-left: 15px;
-  position: relative;
-}
-
-.button-toggle #bars-1 {
-  width: 23px;
-  height: 2px;
-  background-color: #fff;
-  z-index: 15;
-  opacity: 1;
-  position: relative;
-  left: -40px;
-  top: 14px;
-}
-
-.button-toggle #bars-2 {
-  width: 23px;
-  height: 2px;
-  background-color: #fff;
-  z-index: 15;
-  opacity: 1;
-  position: relative;
-  left: -40px;
-  top: 22px;
-}
-
-.modal-menu-over {
-z-index: 20;
-opacity: 0;
-}
-
-.modal-menu {
-  position: absolute;
+#modal-dialog {
+  max-width: 100%;
+  margin: 0;
+  max-height:100%;
+  padding-top: 20px;
   background-color: #3b181e;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transform: translateY(100%);
-  transition: 0.7s ease-in-out;
-  opacity: 0;
 }
 
-.modal-menu::before {
-  position: relative;
-  top:-360px;
-  right: -1100px;
-  content: "x";
-  font-size: 5rem;
-  text-transform: none;
-}
-.modal-true {
-  transform: translateY(0%);
-  opacity: 1;
+.modal-header {
+  border: none;
+  background-color: #3b181e;
 }
 
-#modal-list {
+.modal-body {
+  background-color: #3b181e;
+  max-height: 100%;
+  height: 100vh;
+}
+
+.modal-body ul {
 list-style: none;
+margin-top: 150px;
+padding-top: 30px;
+height: 100%;
 }
 
 .modal-item {
-  font-size: 2.5rem;
-  letter-spacing: 0.25rem;
+  font-size: 2.95rem;
+  letter-spacing: 0.29rem;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   margin-bottom: 60px;
@@ -122,7 +83,26 @@ list-style: none;
 .modal-item:hover {
   font-size: 3.75rem;
   letter-spacing: 0.35rem;
+  color:#fff;
+}
+
+#modal-button {
+  font-size: 1.8rem;
+  border: 0;
+  background: transparent;
   color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+#modal-button:focus {
+border: none;
+box-shadow: none;
+}
+
+button.close {
+font-size: 40px;
+font-weight: 400;
 }
 
 #header {
@@ -151,7 +131,6 @@ list-style: none;
 }
 
 #btn-header {
-
   padding: 0;
   margin-top: 80px;
 }
@@ -245,7 +224,7 @@ list-style: none;
 #catalogue-name::after {
 position: absolute;
 left: 130px;
-top: 65px;
+top: 35px;
 content: "Каталог услуг";
 font-size: 18.3rem;
 z-index: 0;
@@ -256,7 +235,7 @@ opacity: 0.03;
 }
 
 #service-list {
-  margin: 120px 205px 170px;
+  margin: 120px 205px 170px 90px;
   z-index: 3;
 }
 
@@ -292,7 +271,7 @@ min-height: 100%;
 transition: all 0.3s ease-in-out;
 }
 
-.card-img-overlay:hover {
+.card:hover .card-img-overlay {
   transform: translateY(-75px);
 }
 
@@ -340,6 +319,7 @@ position: relative;
 .btn-sale {
   font-size: 0.95rem;
   background-color: #010001;
+  border: none;
 }
 
 #sale img {
@@ -362,6 +342,11 @@ margin-top: 170px;
   margin-right: 50px;
   font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.5);
+  transition: 0.2s;
+}
+
+#footer-nav li:hover {
+  color: #fff;
 }
 
 #footer-icons {
